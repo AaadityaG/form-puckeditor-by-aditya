@@ -1,11 +1,11 @@
-import React from "react";
+import type { ReactElement } from "react";
 
 const Button = ({ text, variant = "primary", url, size }: { 
   text: string; 
   variant: "primary" | "secondary" | "outline"; 
   url: string;
   size: "small" | "medium" | "large";
-}) => (
+}): ReactElement => (
   <a href={url} style={{
     padding: size === "small" ? "8px 16px" : size === "large" ? "16px 32px" : "12px 24px",
     borderRadius: "6px",

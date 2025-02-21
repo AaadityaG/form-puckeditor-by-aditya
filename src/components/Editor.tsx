@@ -1,4 +1,4 @@
-import { Puck } from "@measured/puck";
+import { Puck, Data } from "@measured/puck";
 import "@measured/puck/dist/index.css";
 
 import Heading from "./ui/Heading";
@@ -188,7 +188,7 @@ export default function Editor() {
     <Puck
       config={config}
       data={initialData}
-      onPublish={(data) => {
+      onPublish={(data: Data) => {
         console.log("Published:", data);
         // Handle saving the data
       }}
