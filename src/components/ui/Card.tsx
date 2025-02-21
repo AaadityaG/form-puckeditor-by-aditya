@@ -1,4 +1,4 @@
-import React from "react";
+import type { ReactElement } from "react";
 import Button from "./Button";
 
 const Card = ({ 
@@ -15,7 +15,7 @@ const Card = ({
   buttonText?: string;
   buttonUrl?: string;
   elevation: "low" | "medium" | "high";
-}) => (
+}): ReactElement => (
   <div style={{ 
     border: "1px solid #ddd",
     borderRadius: "12px",

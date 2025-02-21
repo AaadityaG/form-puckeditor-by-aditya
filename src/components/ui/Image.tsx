@@ -1,4 +1,4 @@
-import React from "react";
+import type { ReactElement } from "react";
 
 const Image = ({ src, alt, width, height, rounded }: { 
   src: string; 
@@ -6,7 +6,7 @@ const Image = ({ src, alt, width, height, rounded }: {
   width: number;
   height?: number;
   rounded?: string;
-}) => (
+}): ReactElement => (
   <img 
     src={src} 
     alt={alt} 

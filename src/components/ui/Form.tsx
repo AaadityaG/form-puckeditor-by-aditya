@@ -1,4 +1,4 @@
-import React from "react";
+import type { ReactElement } from "react";
 
 type FormFieldType = "text" | "email" | "number" | "radio" | "checkbox" | "select" | "textarea";
 
@@ -8,7 +8,7 @@ interface FormField {
   options?: string[];
 }
 
-const FormField = ({ field }: { field: FormField }) => {
+const FormField = ({ field }: { field: FormField }): ReactElement | null => {
   switch (field.type) {
     case "text":
     case "email":
@@ -80,7 +80,7 @@ const FormField = ({ field }: { field: FormField }) => {
 const Form = ({ fields = [], submitText = "Submit" }: { 
   fields: FormField[];
   submitText: string;
-}) => (
+}): ReactElement => (
   <form style={{ 
     padding: "20px",
     border: "1px solid #ddd",

@@ -1,11 +1,11 @@
-import React from "react";
+import type { ReactElement } from "react";
 
 const Testimonial = ({ quote, author, role, avatarUrl }: {
   quote: string;
   author: string;
   role: string;
   avatarUrl: string;
-}) => (
+}): ReactElement => (
   <div style={{
     padding: "24px",
     borderRadius: "12px",

@@ -1,10 +1,10 @@
-import React from "react";
+import type { ReactElement } from "react";
 
 const Video = ({ url, width, autoplay }: { 
   url: string; 
   width: number; 
   autoplay: string;
-}) => (
+}): ReactElement => (
   <video 
     style={{ maxWidth: `${width}px`, width: "100%" }}
     controls
